@@ -210,3 +210,7 @@ li {
   clip: auto;
   background-color: white;
 }
+
+#frame {
+  frameborder: 0;
+}
