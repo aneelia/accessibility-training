@@ -37,32 +37,32 @@
           <ul class="navbar-end">
               <li class="navbar-item">
                 <button onclick="" class="button is-white is-outlined custom-focus">
-                  <span class="icon">
-                    <i class="fa fa-home"></i>
+                  <span class="icon" aria-hidden="true">
+                    <span class="fa fa-home"></span>
                   </span>
                   <span>Home</span>
                 </button>
               </li>
             <li class="navbar-item">
                 <button onclick="" class="button is-white is-outlined custom-focus">
-                  <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                  <span class="icon" aria-hidden="true">
+                    <span class="fab fa-superpowers"></span>
                   </span>
                   <span>Examples</span>
                 </button>
               </li>
             <li class="navbar-item">
                 <button onclick="" class="button is-white is-outlined custom-focus">
-                  <span class="icon">
-                    <i class="fa fa-book"></i>
+                  <span class="icon" aria-hidden="true">
+                    <span class="fa fa-book"></span>
                   </span>
                   <span>Documentation</span>
                 </button>
               </li>
             <li class="navbar-item">
                 <button onclick="" class="button is-white is-outlined custom-focus">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
+                  <span class="icon" aria-hidden="true">
+                    <span class="fab fa-github"></span>
                   </span>
                   <span>View Source</span>
                 </button>
@@ -76,20 +76,20 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <div class="column is-6 is-offset-3">
-        <h1 class="title has-text-white">We have web accessibility in mind</h1>
-        <h3 class="subtitle has-text-white">
+        <h1 class="title has-text-white" id="site-description">We have web accessibility in mind</h1>
+        <h3 class="subtitle has-text-white" id="user-possibility">
           Would you like to get the latest news?
         </h3>
         <div class="box">
           <div class="field is-grouped">
             <p class="control is-expanded">
-              <input class="input custom-focus">
+              <input class="input custom-focus" aria-labelledby="site-description user-possibility">
               <span class="visually-hidden">
                 find topics and we notify you in the future
               </span>
             </p>
             <p class="control">
-              <button class="button is-info custom-focus">Notify Me</button>
+              <button class="button is-info custom-focus" aria-label="notify if these site has news">Notify Me</button>
             </p>
           </div>
         </div>
@@ -98,8 +98,8 @@
   </div>
 </header>
 
-<main id="main" aria-labelledby="mainSection">
-<section class="section" id="about" aria-labelledby="aboutTitle">
+<main id="main" aria-label="mainSection">
+<section class="section" id="about" aria-label="aboutTitle">
   <div class="section-heading has-text-centered">
     <h2 class="title is-2" id="aboutTitle">About Us</h2>
     <h5 class="subtitle is-5">We of all trades, master of "some"</h5>
@@ -204,7 +204,7 @@
   </div>
 </section>
 
-<section class="hero has-background-grey-light" aria-labelledby="keyFeatures">
+<section class="hero has-background-grey-light" aria-label="keyFeatures">
   <div class="container features">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2" id="keyFeatures">Three key features</h2>
@@ -214,14 +214,14 @@
     <div class="columns">
       <div class="column is-4">
         <div class="card is-shady">
-          <div class="card-image has-text-centered">
-            <i class="fa fa-paw"></i>
+          <div class="card-image has-text-centered" aria-hidden="true">
+            <span class="fa fa-paw"></span>
           </div>
           <div class="card-content">
             <div class="content">
               <div>Tristique senectus et netus et.</div>
               <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-              <p><button onclick="" class="custom-focus">Learn more</button></p>
+              <p><a role="button" tabindex="0" onclick="" class="custom-focus" aria-label=">Learn more">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -229,15 +229,15 @@
 
       <div class="column is-4">
         <div class="card is-shady">
-          <div class="card-image has-text-centered">
-            <i class="fab fa-empire"></i>
+          <div class="card-image has-text-centered" aria-hidden="true">
+            <span class="fab fa-empire"></span>
           </div>
           <div class="card-content">
             <div class="content">
               <div>Tempor orci dapibus ultrices in.</div>
               <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                 sed risus.</p>
-              <p><button onclick="" class="custom-focus">Learn more</button></p>
+              <p><a role="button" tabindex="0" onclick="" class="custom-focus" aria-label=">Learn more">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -245,14 +245,14 @@
 
       <div class="column is-4">
         <div class="card is-shady">
-          <div class="card-image has-text-centered">
-            <i class="fab fa-apple"></i>
+          <div class="card-image has-text-centered" aria-hidden="true">
+            <span class="fab fa-apple"></span>
           </div>
           <div class="card-content">
             <div class="content">
               <div> Leo integer malesuada nunc vel risus. </div>
               <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-              <p><button onclick="" class="custom-focus">Learn more</button></p>
+              <p><a role="button" tabindex="0" onclick="" class="custom-focus" aria-label=">Learn more">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -261,6 +261,7 @@
   </div>
 </section>
 
+<div id="topics" role="application">
 <div class="hero is-info">
   <div class="hero-body">
     <div class="container">
@@ -268,23 +269,23 @@
       <h3 class="subtitle">We are always in touch we the outside world</h3>
     </div>
   </div>
-  <div class="tabs is-boxed is-centered main-menu" id="nav">
-    <ul>
-      <li data-target="pane-1" id="1" class="is-active">
+  <div class="tabs is-boxed is-centered main-menu" id="tabs">
+    <ul role="tablist">
+      <li data-target="pane-1" id="1" class="is-active" role="tab">
         <a role="button" tabindex="0" class="custom-focus">
-          <span class="icon is-small"><i class="fa fa-image"></i></span>
+          <span class="icon is-small" aria-hidden="true"><span class="fa fa-image"></span></span>
           <span>Pictures</span>
         </a>
       </li>
-      <li data-target="pane-3" id="3">
+      <li data-target="pane-3" id="3" role="tab">
         <a role="button" tabindex="0" class="custom-focus">
-          <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+          <span class="icon is-small" aria-hidden="true"><span class="fab fa-superpowers"></span></span>
           <span>Team</span>
         </a>
       </li>
-      <li data-target="pane-4" id="4">
+      <li data-target="pane-4" id="4" role="tab">
         <a role="button" tabindex="0" class="custom-focus">
-          <span class="icon is-small"><i class="fa fa-film"></i></span>
+          <span class="icon is-small" aria-hidden="true"><span class="fa fa-film"></span></span>
           <span>Video</span>
         </a>
       </li>
@@ -293,7 +294,7 @@
 </div>
 
 <div class="tab-content container">
-  <div class="tab-pane is-active" id="pane-1" class="level">
+  <div class="tab-pane is-active" id="pane-1" class="level" role="tabpanel">
     <div class="container">
       <div class="columns features">
         <div class="column is-4">
@@ -349,12 +350,12 @@
     </div>
   </div>
 
-  <div class="tab-pane" id="pane-3">
+  <div class="tab-pane" id="pane-3" role="tabpanel">
     <div class="columns medias">
       <div class="column">
         <div class="media">
           <div class="media-left">
-            <i class="fab fa-github-square fa-4x"></i>
+            <span class="fab fa-github-square fa-4x"></span>
           </div>
           <div class="media-content">
             <div class="content">
@@ -367,7 +368,7 @@
         </div>
         <div class="media">
           <div class="media-left">
-            <i class="fab fa-empire fa-4x"></i>
+            <span class="fab fa-empire fa-4x"></span>
           </div>
           <div class="media-content">
             <div class="content">
@@ -382,7 +383,7 @@
       <div class="column">
         <div class="media">
           <div class="media-left">
-            <i class="fab fa-ravelry fa-4x"></i>
+            <span class="fab fa-ravelry fa-4x"></span>
           </div>
           <div class="media-content">
             <div class="content">
@@ -395,7 +396,7 @@
         </div>
         <div class="media">
           <div class="media-left">
-            <i class="fab fa-github-alt fa-4x"></i>
+            <span class="fab fa-github-alt fa-4x"></span>
           </div>
           <div class="media-content">
             <div class="content">
@@ -410,19 +411,20 @@
     </div>
   </div>
 
-  <div class="tab-pane" id="pane-4">
+  <div class="tab-pane" id="pane-4" role="tabpanel">
     <div class="columns is-centered">
       <div class="column is-three-quarters">
         <h2 class="title has-text-centered">Inspired video</h2>
         <div class="embed-container image">
-          <iframe src="https://player.vimeo.com/video/261794608" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <iframe id="frame" src="https://player.vimeo.com/video/261794608" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
+</div>
 
-<section class="section has-background-grey-lighter" aria-labelledby="upcomingEvents">
+<section class="section has-background-grey-lighter" aria-label="upcomingEvents">
   <div class="container has-text-centered">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2" id="upcomingEvents">Upcoming events</h2>
@@ -437,7 +439,7 @@
           </div>
           <h2 class="title">New York</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to web accessibility summit">Buy Tickets</button>
         </div>
       </div>
       <div class="tile is-parent">
@@ -447,7 +449,7 @@
           </div>
           <h2 class="title">Los Angeles</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to accessibility summit">Buy Tickets</button>
         </div>
       </div>
       <div class="tile is-parent">
@@ -457,7 +459,7 @@
           </div>
           <h2 class="title">Mexico</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to dot css conference">Buy Tickets</button>
         </div>
       </div>
     </div>
@@ -470,7 +472,7 @@
           </div>
           <h2 class="title">Paris</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to A11 webinar">Buy Tickets</button>
         </div>
       </div>
       <div class="tile is-parent">
@@ -480,7 +482,7 @@
           </div>
           <h2 class="title">Minsk</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to CSS AND JS in Minsk">Buy Tickets</button>
         </div>
       </div>
       <div class="tile is-parent">
@@ -490,14 +492,14 @@
           </div>
           <h2 class="title">London</h2>
           <h3 class="subtitle">Fri 27 Nov 2016</h3>
-          <button onclick="" class="button custom-focus">Buy Tickets</button>
+          <button onclick="" class="button custom-focus" aria-label="buy tickets to accessibility summit">Buy Tickets</button>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" aria-labelledby="services">
+<section class="section" aria-label="services">
   <div class="section-heading has-text-centered">
     <h2 class="title is-2" id="services">Services</h2>
     <h5 class="subtitle is-5">What can I do for you?</h5>
@@ -545,7 +547,7 @@
   </div>
 </section>
 
-<section class="section has-background-grey-lighter" aria-labelledby="photos">
+<section class="section has-background-grey-lighter" aria-label="photos">
   <div class="container">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2" id="photos">Photos from past events</h2>
@@ -699,7 +701,7 @@
 </section>
 </div>
 
-<section class="section" aria-labelledby="forum">
+<section class="section" aria-label="forum">
   <div class="container">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2" id="forum">Forum</h2>
@@ -708,7 +710,7 @@
 
     <div class="columns">
       <div class="column is-3">
-        <button class="button is-primary is-block is-alt is-large custom-focus">New Post</button>
+        <button class="button is-primary is-block is-alt is-large custom-focus" aria-label="add new post">New Post</button>
         <div class="menu">
           <ul class="menu-list forum-list">
             <li><span class="tag is-primary is-medium">Dashboard</span></li>
@@ -740,7 +742,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 1</span>
               </div>
             </div>
           </div>
@@ -762,7 +764,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 0</span>
               </div>
             </div>
           </div>
@@ -784,7 +786,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 13</span>
               </div>
             </div>
           </div>
@@ -806,7 +808,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 2</span>
               </div>
             </div>
           </div>
@@ -828,7 +830,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 2</span>
               </div>
             </div>
           </div>
@@ -850,7 +852,7 @@
                 </div>
               </div>
               <div class="media-right">
-                <span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+                <span class="has-text-grey-light"><span class="fa fa-comments"></span> 2</span>
               </div>
             </div>
           </div>
@@ -860,18 +862,19 @@
   </div>
 </section>
 
-<section class="section has-background-light" aria-labelledby="contacts">
+<section class="section has-background-light" aria-label="contacts">
   <div class="container">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2" id="contacts">Contact us</h2>
       <h5 class="subtitle is-5">Don't hesitate, ask anything</h5>
     </div>
 
-    <form role="contact" class="column is-half is-offset-one-quarter box">
+    <form class="column is-half is-offset-one-quarter box">
+      <fieldset style="border: none;">
       <div class="field">
-        <label class="label">Name</label>
+        <label class="label" for="name">Name</label>
         <div class="control">
-          <input class="input custom-focus" type="text" placeholder="Text input">
+          <input id="name" class="input custom-focus" type="text" placeholder="Text input" aria-placeholder="simple text">
           <span class="visually-hidden">
             enter your name
           </span>
@@ -879,48 +882,48 @@
       </div>
 
       <div class="field">
-        <label class="label">Username</label>
+        <label class="label" for="username">Username</label>
         <div class="control has-icons-left has-icons-right">
           <span>
-            <input class="input is-success custom-focus" type="text">
+            <input id="username" class="input is-success custom-focus" type="text">
             <span class="visually-hidden">
               enter your username
             </span>
           </span>
-          <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
+          <span class="icon is-small is-left" aria-hidden="true">
+              <span class="fas fa-user"></span>
             </span>
-          <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
+          <span class="icon is-small is-right" aria-hidden="true">
+              <span class="fas fa-check"></span>
             </span>
         </div>
         <p class="help is-success">This username is available</p>
       </div>
 
       <div class="field">
-        <label class="label">Email</label>
+        <label class="label" for="email">Email</label>
         <div class="control has-icons-left has-icons-right">
           <span>
-            <input class="input is-danger custom-focus" type="email" placeholder="Email input" value="hello@">
+            <input id="email" class="input is-danger custom-focus" type="email" placeholder="Email input" value="hello@" aria-placeholder="email type with at symbol">
             <span class="visually-hidden">
               enter your email
             </span>
           </span>
-          <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
+          <span class="icon is-small is-left" aria-hidden="true">
+              <span class="fas fa-envelope"></span>
             </span>
-          <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
+          <span class="icon is-small is-right" aria-hidden="true">
+              <span class="fas fa-exclamation-triangle"></span>
             </span>
         </div>
         <p class="help is-danger">This email is invalid</p>
       </div>
 
       <div class="field">
-        <label class="label">Subject</label>
+        <label class="label" for="dropdown">Subject</label>
         <div class="control">
           <div class="select custom-focus">
-            <select>
+            <select id="dropdown">
               <option>Select dropdown</option>
               <option>With options</option>
             </select>
@@ -929,29 +932,30 @@
       </div>
 
       <div class="field">
-        <label class="label">Message</label>
+        <label class="label" for="message">Message</label>
         <div class="control">
-          <textarea class="textarea custom-focus" placeholder="Textarea"></textarea>
+          <textarea id="message" class="textarea custom-focus" placeholder="Textarea" aria-placeholder="simple text"></textarea>
         </div>
       </div>
 
       <div class="field">
         <div class="control">
-          <label class="checkbox custom-focus ">
-            <input type="checkbox">
+          <label class="checkbox custom-focus" for="checkbox">
+            <input type="checkbox" id="checkbox">
             I agree to the <span>terms and conditions</span>
           </label>
         </div>
       </div>
 
-      <div class="field">
+      <div class="field" role="group" aria-labelledby="groupDescr">
+        <p class="visually-hidden" id="groupDescr">Radio group</p>
         <div class="control">
-          <label class="radio">
-            <input type="radio" name="question custom-focus">
+          <label class="radio" for="radio-yes">
+            <input type="radio" id="radio-yes" name="question custom-focus">
             Yes
           </label>
-          <label class="radio">
-            <input type="radio" name="question custom-focus">
+          <label class="radio" for="radio-no">
+            <input type="radio" id="radio-no" name="question custom-focus">
             No
           </label>
         </div>
@@ -959,12 +963,13 @@
 
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-link custom-focus">Submit</button>
+          <button class="button is-link custom-focus" aria-label="submit form">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-text custom-focus">Cancel</button>
+          <button class="button is-text custom-focus" aria-label="cancel form">Cancel</button>
         </div>
       </div>
+      </fieldset>
     </form>
   </div>
 </section>
@@ -977,7 +982,7 @@
         <div class="notification media has-background-white">
           <div class="media-left">
             <span class="icon">
-              <i class="has-text-warning fas fa-columns fa-lg"></i>
+              <span class="has-text-warning fas fa-columns fa-lg"></i>
             </span>
           </div>
           <div class="media-content">
@@ -994,7 +999,7 @@
         <div class="notification has-background-white media">
           <div class="media-left">
             <span class="icon has-text-info">
-              <i class="fab fa-lg fa-wpforms"></i>
+              <span class="fab fa-lg fa-wpforms"></i>
             </span>
           </div>
           <div class="media-content">
@@ -1120,10 +1125,10 @@
 
     <div class="content has-text-centered">
       <div class="soc">
-        <a href="#" role="none" class="custom-focus"><i class="fab fa-github-alt fa-2x"></i></a>
-        <a href="#" role="none" class="custom-focus"><i class="fab fa-youtube fa-2x"></i></a>
-        <a href="#" role="none" class="custom-focus"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="#" role="none" class="custom-focus"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" role="none" class="custom-focus"><span class="fab fa-github-alt fa-2x"></i></a>
+        <a href="#" role="none" class="custom-focus"><span class="fab fa-youtube fa-2x"></i></a>
+        <a href="#" role="none" class="custom-focus"><span class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" role="none" class="custom-focus"><span class="fab fa-twitter fa-2x"></i></a>
       </div>
       <p>
         The source code is licensed
@@ -1139,7 +1144,8 @@
   </div>
 </footer>
 
-<div id="modal-card" class="modal modal-fx-3dSlit">
+<div aria-modal="true">
+<div id="modal-card" class="modal modal-fx-3dSlit" role="dialog" aria-labelledby="dialog1Title">
   <div class="modal-background"></div>
   <div class="modal-content is-tiny">
     <div class="card">
@@ -1156,7 +1162,7 @@
             </div>
           </div>
           <div class="media-content">
-            <div class="title is-4">Jane Doe</div>
+            <div class="title is-4" id="dialog1Title">Jane Doe</div>
             <div class="subtitle is-6">@jane_doe</div>
           </div>
         </div>
@@ -1174,7 +1180,8 @@
       </div>
     </div>
   </div>
-  <button class="modal-close is-large custom-focus"></button>
+  <p class="visually-hidden" id="describeCloseFirst">close modal window</p>
+  <button class="modal-close is-large custom-focus" aria-label="close modal" aria-describedby="describeCloseFirst"></button>
 </div>
 
 <div id="modal-image1" class="modal modal-fx-3dSlit">
@@ -1182,7 +1189,8 @@
   <div class="modal-content is-huge is-image">
     <img src="https://source.unsplash.com/random/?sig=1" alt="random">
   </div>
-  <button class="modal-close is-large custom-focus"></button>
+  <p class="visually-hidden" id="describeCloseSecond">close modal window</p>
+  <button class="modal-close is-large custom-focus" aria-label="close modal" aria-describedby="describeCloseSecond"></button>
 </div>
 
 <div id="modal-image2" class="modal modal-fx-superScaled">
@@ -1190,7 +1198,10 @@
   <div class="modal-content  is-image">
     <img src="https://source.unsplash.com/random/?sig=3" alt="modal">
   </div>
-  <button class="modal-close is-large custom-focus"></button>
+  <p class="visually-hidden" id="describeCloseThird">close modal window</p>
+  <button class="modal-close is-large custom-focus" aria-label="close modal" aria-describedby="describeCloseThird"></button>
+  </p>
+</div>
 </div>
 
 <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
